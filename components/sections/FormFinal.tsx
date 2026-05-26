@@ -53,11 +53,11 @@ export function FormFinal() {
                     className="absolute inset-0 bg-gradient-to-t from-deep/65 via-deep/15 to-transparent"
                   />
                   <div className="absolute inset-x-6 bottom-6 flex flex-wrap items-end justify-between gap-4 text-white sm:inset-x-9 sm:bottom-8">
-                    <div className="flex flex-col leading-tight">
-                      <span className="font-mono text-[0.68rem] uppercase tracking-marker text-accent-green">
+                    <div className="flex min-w-0 flex-col items-start gap-2 leading-tight">
+                      <span className="inline-flex w-fit items-center whitespace-nowrap rounded-full border border-white/20 bg-deep/65 px-3 py-1.5 font-mono text-[0.62rem] uppercase tracking-marker text-[#A4D9B7] backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] sm:text-[0.68rem]">
                         Tylko prawdziwe wnętrza
                       </span>
-                      <span className="mt-2 font-display text-[1.4rem] tracking-tighter text-white sm:text-[1.65rem]">
+                      <span className="font-display text-[1.4rem] tracking-tighter text-white drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:text-[1.65rem]">
                         Twoje wnętrze może być następne.
                       </span>
                     </div>
