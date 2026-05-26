@@ -43,7 +43,7 @@ const ORG_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": `${SITE.url}/#business`,
-  name: "Panelio — panele dekoracyjne",
+  name: "EPOXMAX — panele dekoracyjne",
   description:
     "Dekoracyjne panele z różnymi wzorami do mieszkań, domów, biur i lokali usługowych. Obsługa całej Polski.",
   url: SITE.url,

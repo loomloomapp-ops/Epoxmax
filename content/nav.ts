@@ -13,8 +13,8 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const BRAND = {
-  name: "Panelio",
+  name: "EPOXMAX",
   tagline:
     "Panele dekoracyjne z nadrukiem do szybkiej metamorfozy wnętrz w całej Polsce.",
-  fullLegal: "Panelio Sp. z o.o.",
+  fullLegal: "EPOXMAX Sp. z o.o.",
 };

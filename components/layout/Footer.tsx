@@ -113,7 +113,7 @@ export function Footer() {
         aria-hidden="true"
         className="relative w-full select-none overflow-hidden leading-[0.82]"
       >
-        <p className="block w-full whitespace-nowrap px-4 font-display font-medium tracking-[-0.045em] text-white text-[24vw] sm:px-6 lg:px-8">
+        <p className="block w-full whitespace-nowrap px-4 font-display font-medium tracking-[-0.045em] text-white text-[18vw] sm:px-6 lg:px-8">
           {BRAND.name}
           <span className="text-accent-green">.</span>
         </p>

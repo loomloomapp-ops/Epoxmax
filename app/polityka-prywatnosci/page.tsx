@@ -7,7 +7,7 @@ import { env } from "@/lib/env";
 export const metadata: Metadata = {
   title: "Polityka prywatności",
   description:
-    "Zasady przetwarzania danych osobowych przez Panelio — administrator, cele, podstawy prawne, prawa użytkownika.",
+    "Zasady przetwarzania danych osobowych przez EPOXMAX — administrator, cele, podstawy prawne, prawa użytkownika.",
   alternates: { canonical: "/polityka-prywatnosci" },
 };
 

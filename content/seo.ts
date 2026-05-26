@@ -16,11 +16,11 @@ export const defaultMetadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default: SITE.title,
-    template: "%s | Panelio",
+    template: "%s | EPOXMAX",
   },
   description: SITE.description,
-  applicationName: "Panelio",
-  authors: [{ name: "Panelio" }],
+  applicationName: "EPOXMAX",
+  authors: [{ name: "EPOXMAX" }],
   keywords: [
     "panele dekoracyjne",
     "panele ścienne z nadrukiem",
@@ -35,7 +35,7 @@ export const defaultMetadata: Metadata = {
     type: "website",
     locale: SITE.locale,
     url: SITE.url,
-    siteName: "Panelio",
+    siteName: "EPOXMAX",
     title: SITE.title,
     description: SITE.description,
     images: [

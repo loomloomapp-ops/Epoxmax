@@ -119,7 +119,7 @@ export function Product() {
                 </span>
                 <div className="flex flex-col leading-tight">
                   <span className="font-mono text-[0.72rem] uppercase tracking-marker text-accent-green">
-                    Panelio · {shot.pattern}
+                    EPOXMAX · {shot.pattern}
                   </span>
                   <span className="mt-2 font-display text-[1.2rem] tracking-tighter text-ink sm:text-[1.35rem]">
                     {shot.room} · {shot.city}

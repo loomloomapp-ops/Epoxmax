@@ -7,7 +7,7 @@ import { env } from "@/lib/env";
 export const metadata: Metadata = {
   title: "Regulamin",
   description:
-    "Regulamin korzystania z serwisu Panelio i ogólne warunki realizacji zamówień paneli dekoracyjnych.",
+    "Regulamin korzystania z serwisu EPOXMAX i ogólne warunki realizacji zamówień paneli dekoracyjnych.",
   alternates: { canonical: "/regulamin" },
 };
 
