@@ -53,14 +53,13 @@ export function Portfolio() {
       className="relative bg-canvas py-14 sm:py-16 lg:py-20"
     >
       <div className="container">
-        {/* Mobile: section label on its own row above the heading */}
-        <Reveal>
+        {/* Mobile: SectionLabel above heading; desktop: SectionLabel in the right corner aligned to heading */}
+        <Reveal className="lg:hidden">
           <SectionLabel number="01" label="Realizacje" />
         </Reveal>
 
-        {/* Heading row */}
-        <div className="mt-6 grid gap-8 sm:mt-10 lg:grid-cols-12 lg:items-end lg:gap-16">
-          <Reveal className="lg:col-span-12">
+        <div className="mt-6 grid gap-8 sm:mt-10 lg:mt-0 lg:grid-cols-12 lg:items-end lg:gap-16">
+          <Reveal className="lg:col-span-9 lg:order-1">
             <EditorialHeading
               as="h2"
               size="lg"
@@ -69,6 +68,9 @@ export function Portfolio() {
             >
               Realizacje i wzory, które <Em>zmieniają</Em> charakter wnętrza
             </EditorialHeading>
+          </Reveal>
+          <Reveal className="hidden lg:order-2 lg:col-span-3 lg:flex lg:justify-end">
+            <SectionLabel number="01" label="Realizacje" />
           </Reveal>
         </div>
 

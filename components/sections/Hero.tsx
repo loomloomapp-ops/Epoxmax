@@ -102,9 +102,10 @@ export function Hero() {
         initial={prefersReduced ? false : { opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.45 }}
-        className="relative z-10 px-4 pb-4 sm:px-6 sm:pb-6"
+        className="relative z-10 pb-4 sm:pb-6"
       >
-        <div className="mx-auto w-full max-w-[1100px] rounded-3xl border border-white/25 bg-white/10 px-2 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl sm:px-4 sm:py-4">
+        <div className="container">
+        <div className="w-full rounded-3xl border border-white/25 bg-white/10 px-2 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl sm:px-4 sm:py-4">
           <dl className="grid grid-cols-3 items-stretch">
             {HERO_STATS.map((stat, i) => (
               <div
@@ -123,6 +124,7 @@ export function Hero() {
               </div>
             ))}
           </dl>
+        </div>
         </div>
       </motion.div>
     </section>

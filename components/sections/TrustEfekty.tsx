@@ -117,14 +117,14 @@ export function TrustEfekty() {
       className="bg-canvas py-14 sm:py-16 lg:py-20"
     >
       <div className="container">
-        {/* Section label */}
-        <Reveal>
+        {/* Mobile: section label above heading */}
+        <Reveal className="lg:hidden">
           <SectionLabel number="05" label="Opinie" />
         </Reveal>
 
-        {/* Heading + description aligned on the same baseline */}
-        <div className="mt-10 grid gap-8 lg:mt-14 lg:grid-cols-12 lg:items-end lg:gap-16">
-          <Reveal delay={0.05} className="lg:col-span-7">
+        {/* Heading on the left, SectionLabel right corner on the same baseline; description under heading */}
+        <div className="mt-10 grid gap-8 lg:mt-0 lg:grid-cols-12 lg:items-end lg:gap-x-10 lg:gap-y-8">
+          <Reveal delay={0.05} className="lg:col-span-8 lg:order-1">
             <EditorialHeading
               as="h2"
               size="lg"
@@ -134,7 +134,10 @@ export function TrustEfekty() {
               Pracujemy nad <Em>wideo-opiniami</Em> od klientów — bez wymyślonych recenzji.
             </EditorialHeading>
           </Reveal>
-          <Reveal delay={0.1} className="lg:col-span-5">
+          <Reveal className="hidden lg:order-2 lg:col-span-4 lg:flex lg:justify-end">
+            <SectionLabel number="05" label="Opinie" />
+          </Reveal>
+          <Reveal delay={0.1} className="lg:order-3 lg:col-span-7">
             <p className="max-w-[44ch] text-[1.02rem] leading-relaxed text-muted">
               Filmy zbieramy podczas wizyt u klientów po realizacji.
               Publikujemy je dopiero po pełnej akceptacji — wkrótce zastąpią

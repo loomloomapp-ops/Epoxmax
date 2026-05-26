@@ -19,21 +19,20 @@ export function Header() {
   return (
     <>
       <motion.header
-        className={cn(
-          "fixed inset-x-0 top-0 z-[70] flex w-full justify-center px-4 sm:px-6",
-        )}
+        className="fixed inset-x-0 top-0 z-[70] w-full"
         initial={false}
         animate={{ y: !prefersReduced && hidden ? -120 : 0 }}
         transition={{ duration: 0.35, ease: [0.32, 0.72, 0, 1] }}
       >
-        <div
-          className={cn(
-            "flex h-[58px] w-full max-w-[1100px] items-center justify-between gap-3 rounded-b-2xl border-x border-b px-3 pr-3 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] transition-[background-color,border-color,box-shadow] duration-400 ease-smooth sm:h-16 sm:px-4 sm:pr-4",
-            scrolled
-              ? "border-white/15 bg-deep/35 shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_12px_30px_-12px_rgba(17,24,39,0.25)]"
-              : "border-white/25 bg-white/10",
-          )}
-        >
+        <div className="container">
+          <div
+            className={cn(
+              "flex h-[58px] w-full items-center justify-between gap-3 rounded-b-2xl border-x border-b px-3 pr-3 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] transition-[background-color,border-color,box-shadow] duration-400 ease-smooth sm:h-16 sm:px-4 sm:pr-4",
+              scrolled
+                ? "border-white/15 bg-deep/35 shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_12px_30px_-12px_rgba(17,24,39,0.25)]"
+                : "border-white/25 bg-white/10",
+            )}
+          >
           <Link
             href="/#start"
             className="flex items-center gap-2 pl-3 pr-2 font-display text-[1.15rem] font-medium tracking-tighter text-white sm:text-[1.25rem]"
@@ -79,6 +78,7 @@ export function Header() {
             >
               <Menu />
             </button>
+          </div>
           </div>
         </div>
       </motion.header>

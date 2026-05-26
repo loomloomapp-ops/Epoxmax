@@ -31,7 +31,7 @@ export function SectionLabel({
     >
       <span
         className={cn(
-          "font-display font-medium leading-none tracking-display text-[1.1rem] sm:text-[3.85rem] lg:text-[4.25rem]",
+          "font-display font-medium leading-none tracking-display text-[1.1rem] sm:text-[1.85rem] lg:text-[2.15rem]",
           numberColor,
         )}
       >

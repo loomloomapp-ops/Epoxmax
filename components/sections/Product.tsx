@@ -15,7 +15,7 @@ type ProductShot = {
 
 const SHOTS: ProductShot[] = [
   {
-    index: "001",
+    index: "01",
     src: "/images/product/produkt-main.jpg",
     alt: "Kuchnia z dekoracyjnym panelem imitującym zieloną ścianę z mchu jako backsplash.",
     pattern: "Wzór \"Mech\"",
@@ -25,7 +25,7 @@ const SHOTS: ProductShot[] = [
       "Strefa za blatem, panel z fakturą zieleni — bez płytek, bez dymu i pyłu.",
   },
   {
-    index: "002",
+    index: "02",
     src: "/images/product/produkt-detail.jpg",
     alt: "Detal panelu z motywem górskim w nowoczesnej sypialni.",
     pattern: "Wzór \"Górski\"",
@@ -67,14 +67,14 @@ export function Product() {
       className="bg-accent-green-soft/40 py-14 sm:py-16 lg:py-20"
     >
       <div className="container">
-        {/* Section label on its own row */}
-        <Reveal>
+        {/* Mobile: SectionLabel above heading */}
+        <Reveal className="lg:hidden">
           <SectionLabel number="02" label="O produkcie" />
         </Reveal>
 
-        {/* Heading + intro on the same baseline */}
-        <div className="mt-10 grid gap-8 lg:mt-14 lg:grid-cols-12 lg:items-end lg:gap-16">
-          <Reveal delay={0.05} className="lg:col-span-7">
+        {/* Heading on the left, SectionLabel right corner on the same baseline; intro under heading */}
+        <div className="mt-10 grid gap-8 lg:mt-0 lg:grid-cols-12 lg:items-end lg:gap-x-10 lg:gap-y-8">
+          <Reveal delay={0.05} className="lg:col-span-8 lg:order-1">
             <EditorialHeading
               as="h2"
               size="lg"
@@ -84,8 +84,11 @@ export function Product() {
               Dekoracyjne panele <Em>z charakterem</Em>, dopasowane do Twojego wnętrza
             </EditorialHeading>
           </Reveal>
-          <Reveal delay={0.1} className="lg:col-span-5">
-            <p className="max-w-[40ch] text-[1.05rem] leading-relaxed text-ink/70">
+          <Reveal className="hidden lg:order-2 lg:col-span-4 lg:flex lg:justify-end">
+            <SectionLabel number="02" label="O produkcie" />
+          </Reveal>
+          <Reveal delay={0.1} className="lg:order-3 lg:col-span-7">
+            <p className="max-w-[44ch] text-[1.05rem] leading-relaxed text-ink/70">
               Tworzymy panele, które łączą charakter wnętrza, funkcję i szybki
               efekt wizualny w jednym rozwiązaniu.
             </p>
