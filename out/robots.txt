@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://panele-dekoracyjne.pl
+Sitemap: https://panele-dekoracyjne.pl/sitemap.xml

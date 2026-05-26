@@ -1,6 +1,6 @@
 node_modules
 .next
-out
+# `out/` is the static export Hostinger serves — kept in the repo on purpose.
 .env
 .env.local
 .env.production
@@ -13,3 +13,4 @@ out
 .idea
 coverage
 next-env.d.ts
+tsconfig.tsbuildinfo
