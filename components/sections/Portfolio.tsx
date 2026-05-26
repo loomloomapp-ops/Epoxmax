@@ -58,7 +58,7 @@ export function Portfolio() {
           <SectionLabel number="01" label="Realizacje" />
         </Reveal>
 
-        <div className="mt-6 grid gap-8 sm:mt-10 lg:mt-0 lg:grid-cols-12 lg:items-end lg:gap-16">
+        <div className="mt-6 grid gap-8 sm:mt-10 lg:mt-0 lg:grid-cols-12 lg:items-start lg:gap-16">
           <Reveal className="lg:col-span-9 lg:order-1">
             <EditorialHeading
               as="h2"

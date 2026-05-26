@@ -73,7 +73,7 @@ export function Product() {
         </Reveal>
 
         {/* Heading on the left, SectionLabel right corner on the same baseline; intro under heading */}
-        <div className="mt-10 grid gap-8 lg:mt-0 lg:grid-cols-12 lg:items-end lg:gap-x-10 lg:gap-y-8">
+        <div className="mt-10 grid gap-8 lg:mt-0 lg:grid-cols-12 lg:items-start lg:gap-x-10 lg:gap-y-8">
           <Reveal delay={0.05} className="lg:col-span-8 lg:order-1">
             <EditorialHeading
               as="h2"

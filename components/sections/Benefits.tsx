@@ -22,7 +22,7 @@ export function Benefits() {
     >
       <div className="container">
         {/* Heading row */}
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-16">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-16">
           <Reveal className="lg:col-span-4">
             <SectionLabel number="04" label="Zalety" />
           </Reveal>
