@@ -25,7 +25,7 @@ export function FloatingWidget() {
         Events.ctaClicked("floating-widget");
         popup.open("floating-widget");
       }}
-      className="group fixed right-5 top-[58%] z-[55] hidden -translate-y-1/2 items-center gap-2 rounded-full border border-hairline bg-surface px-3 py-3 shadow-[0_18px_40px_-20px_rgba(16,42,44,0.35)] outline-none transition-[transform,box-shadow,border-color] duration-400 ease-smooth focus-visible:ring-2 focus-visible:ring-accent-blue lg:flex"
+      className="group fixed right-5 bottom-8 z-[55] hidden items-center gap-2 rounded-full border border-hairline bg-surface px-3 py-3 shadow-[0_18px_40px_-20px_rgba(16,42,44,0.35)] outline-none transition-[transform,box-shadow,border-color] duration-400 ease-smooth focus-visible:ring-2 focus-visible:ring-accent-blue lg:flex"
       initial={false}
       animate={{
         x: !prefersReduced && visible ? 0 : 80,
