@@ -246,12 +246,12 @@ export function LeadForm({
         id="lead-message"
         label="Wiadomość"
         error={errors.message?.message}
-        hint="Opisz wnętrze, którego dotyczy zapytanie — pomoże nam dobrać wzór."
+        hint="Opisz swój pomysł i wnętrze, którego dotyczy zapytanie — przygotujemy wycenę."
         className={cn(labelTone)}
       >
         <Textarea
           id="lead-message"
-          placeholder="np. Sypialnia w mieszkaniu, ściana za łóżkiem, szukamy wzoru w spokojnej kolorystyce."
+          placeholder="np. Sypialnia, ściana za łóżkiem — mam własny pomysł na wzór górski w spokojnej kolorystyce."
           invalid={Boolean(errors.message)}
           {...register("message")}
         />

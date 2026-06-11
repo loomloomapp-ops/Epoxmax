@@ -8,7 +8,7 @@ import { Events } from "@/lib/analytics";
 import { cn } from "@/lib/cn";
 
 const HERO_STATS = [
-  { value: "30+", label: "Wzorów do wyboru" },
+  { value: "100%", label: "Autorskie realizacje" },
   { value: "24h", label: "Reakcja na zapytanie" },
   { value: "16/16", label: "Województw — cała Polska" },
 ];
@@ -47,7 +47,7 @@ export function Hero() {
             className="inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/15 px-4 py-2 font-mono text-[0.72rem] uppercase tracking-marker text-white backdrop-blur-md"
           >
             <span aria-hidden="true" className="block h-1.5 w-1.5 animate-pulse-soft rounded-full bg-accent-green" />
-            <span>Panele dekoracyjne · Cała Polska</span>
+            <span>Ekskluzywne panele na zamówienie · Cała Polska</span>
           </motion.span>
 
           <motion.div
@@ -74,9 +74,9 @@ export function Hero() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="mt-8 max-w-[44rem] text-[1.05rem] leading-relaxed text-white/85 sm:text-[1.15rem]"
           >
-            Tworzymy panele z różnymi wzorami do mieszkań, domów, biur i lokali
-            usługowych. Szybki sposób na odświeżenie ścian — bez długiego remontu,
-            kurzu i chaosu.
+            Tworzymy ekskluzywne panele na zamówienie do mieszkań, domów, biur i
+            lokali usługowych. Indywidualny, autorski wzór i prestiżowy akcent
+            wnętrza — bez długiego remontu, kurzu i chaosu.
           </motion.p>
 
           <motion.div

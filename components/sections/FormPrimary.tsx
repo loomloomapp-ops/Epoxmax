@@ -5,8 +5,8 @@ import { LeadForm } from "@/components/forms/LeadForm";
 import { Check } from "@/components/icons/Check";
 
 const POINTS = [
-  "Dobór wzoru pod Twoje wnętrze",
-  "Konsultacja bez zobowiązań",
+  "Indywidualny panel na zamówienie",
+  "Prestiżowe wykonanie premium",
   "Obsługa w całej Polsce",
 ];
 
@@ -39,13 +39,14 @@ export function FormPrimary() {
                 id="konsultacja-title"
                 className="max-w-[22ch]"
               >
-                Opisz swoje wnętrze — <Em>przygotujemy</Em> propozycję paneli
+                Przyślij swój pomysł — <Em>wykonamy</Em> panel na zamówienie
               </EditorialHeading>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="max-w-[55ch] text-[1.05rem] leading-relaxed text-white/75">
                 Wypełnij krótki formularz — odpowiadamy w ciągu 24 godzin w dni
-                robocze. Doradzimy wzór, omówimy szczegóły techniczne i wycenę.
+                robocze. Omówimy szczegóły techniczne, materiały i wycenę Twojego
+                indywidualnego projektu.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
@@ -68,8 +69,8 @@ export function FormPrimary() {
                 <span className="block font-mono text-[0.7rem] uppercase tracking-marker text-accent-green">
                   Co dalej
                 </span>
-                Otrzymasz krótkie podsumowanie z propozycją wzorów, szacunkowy
-                czas realizacji oraz informację o sposobie wysyłki. Bez presji
+                Otrzymasz wycenę Twojego projektu, szacunkowy czas realizacji
+                oraz informację o sposobie montażu i wysyłki. Bez presji
                 sprzedażowej.
               </p>
             </Reveal>

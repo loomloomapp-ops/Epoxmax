@@ -7,7 +7,7 @@ import { ParallaxImage } from "@/components/ui/ParallaxImage";
 import { BENEFITS } from "@/content/benefits";
 
 const SUCCESS_STATS = [
-  { value: "30", suffix: "+", label: "Wzorów do wyboru" },
+  { value: "100", suffix: "%", label: "Indywidualne realizacje" },
   { value: "16", suffix: "/16", label: "Województw obsługujemy" },
   { value: "24", suffix: "h", label: "Reakcja na zapytanie" },
   { value: "0", suffix: " dni", label: "Wstrzymanego życia" },

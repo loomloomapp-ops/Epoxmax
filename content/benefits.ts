@@ -25,9 +25,9 @@ export const BENEFITS: Benefit[] = [
   {
     id: "wybor",
     index: "03",
-    title: "Duży wybór wzorów",
+    title: "Dowolny wzór na zamówienie",
     description:
-      "Panele można dopasować do stylu wnętrza i oczekiwanego efektu — od subtelnych faktur po wyraziste motywy.",
+      "Realizujemy autorskie projekty według Twojej wizji — od subtelnych faktur po wyraziste motywy klasy premium.",
   },
   {
     id: "przestrzenie",

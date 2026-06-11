@@ -44,13 +44,13 @@ const PRODUCT_POINTS = [
   },
   {
     index: "02",
-    title: "Różne wzory i style",
-    body: "Od subtelnych faktur i naturalnych motywów po wyraziste kompozycje, które stają się akcentem wnętrza.",
+    title: "Dowolny wzór na zamówienie",
+    body: "Realizujemy autorskie projekty według Twojej wizji — od subtelnych faktur po wyraziste kompozycje klasy premium.",
   },
   {
     index: "03",
     title: "Szybka zmiana wyglądu",
-    body: "Zamiast wielodniowego remontu wybierasz wzór, my dopasowujemy go do przestrzeni i wymiarów.",
+    body: "Zamiast wielodniowego remontu przysyłasz swój pomysł, a my wykonujemy panel pod wymiar przestrzeni.",
   },
   {
     index: "04",
@@ -89,8 +89,8 @@ export function Product() {
           </Reveal>
           <Reveal delay={0.1} className="lg:order-3 lg:col-span-7">
             <p className="max-w-[44ch] text-[1.05rem] leading-relaxed text-ink/70">
-              Tworzymy panele, które łączą charakter wnętrza, funkcję i szybki
-              efekt wizualny w jednym rozwiązaniu.
+              Tworzymy ekskluzywne panele na zamówienie, które łączą prestiż,
+              charakter wnętrza i szybki efekt wizualny w jednym rozwiązaniu.
             </p>
           </Reveal>
         </div>

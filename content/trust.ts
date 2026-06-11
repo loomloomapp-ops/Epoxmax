@@ -5,7 +5,7 @@ export type TrustBadgeItem = {
 export const HERO_BADGES: TrustBadgeItem[] = [
   { label: "Cała Polska" },
   { label: "Efekt nawet w kilka godzin" },
-  { label: "Wiele wzorów do wyboru" },
+  { label: "Dowolny wzór na zamówienie" },
   { label: "Mieszkania i lokale komercyjne" },
 ];
 

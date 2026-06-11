@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
@@ -8,7 +9,7 @@ import { MobileMenu } from "@/components/layout/MobileMenu";
 import { Menu } from "@/components/icons/Menu";
 import { useHideOnScroll } from "@/hooks/useHideOnScroll";
 import { cn } from "@/lib/cn";
-import { BRAND, NAV_ITEMS } from "@/content/nav";
+import { NAV_ITEMS } from "@/content/nav";
 import { Events } from "@/lib/analytics";
 
 export function Header() {
@@ -35,13 +36,19 @@ export function Header() {
           >
           <Link
             href="/#start"
-            className="flex items-center gap-2 pl-3 pr-2 font-display text-[1.15rem] font-medium tracking-tighter text-white sm:text-[1.25rem]"
+            aria-label="EPOXMAX — strona główna"
+            className="flex items-center pl-1"
           >
-            <span
-              aria-hidden="true"
-              className="block h-2 w-2 rounded-full bg-accent-green"
-            />
-            <span>{BRAND.name}</span>
+            <span className="flex h-9 items-center rounded-xl bg-white px-2.5 shadow-[0_2px_10px_-2px_rgba(0,0,0,0.25)] sm:h-10 sm:px-3">
+              <Image
+                src="/images/brand/epoxmax-lockup.png"
+                alt="EPOXMAX"
+                width={1356}
+                height={240}
+                priority
+                className="h-5 w-auto sm:h-[1.45rem]"
+              />
+            </span>
           </Link>
 
           <nav

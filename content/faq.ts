@@ -9,7 +9,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     id: "rodzaje-pomieszczen",
     question: "Czy panele nadają się do każdego pomieszczenia?",
     answer:
-      "Panele można dopasować do wielu typów wnętrz: mieszkań, domów, biur i lokali usługowych. Przy kontakcie pomożemy ocenić, które rozwiązanie będzie najlepsze dla konkretnej powierzchni i warunków w pomieszczeniu.",
+      "Panele sprawdzają się w wielu typach wnętrz: mieszkaniach, domach, biurach i lokalach usługowych. Każdą realizację wykonujemy pod wymiar konkretnej powierzchni i warunków panujących w pomieszczeniu.",
   },
   {
     id: "czas",
@@ -19,21 +19,21 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     id: "wzory",
-    question: "Czy mogę wybrać wzór paneli?",
+    question: "Czy mogę mieć własny, dowolny wzór?",
     answer:
-      "Tak. Oferujemy różne wzory i style, aby dopasować wygląd paneli do charakteru wnętrza. Możemy zaproponować zarówno subtelne faktury, jak i wyraziste motywy dekoracyjne.",
+      "Tak. To Ty decydujesz o wzorze — realizujemy indywidualne, autorskie projekty według Twojej wizji. Od subtelnych faktur po wyraziste motywy dekoracyjne, w prestiżowym wykonaniu premium.",
   },
   {
     id: "polska",
     question: "Czy działacie na terenie całej Polski?",
     answer:
-      "Tak, obsługujemy klientów z całej Polski. Niezależnie od miejscowości pomożemy dobrać wzór i odpowiedź na pytania techniczne.",
+      "Tak, obsługujemy klientów z całej Polski. Niezależnie od miejscowości zrealizujemy Twój projekt i odpowiemy na pytania techniczne.",
   },
   {
     id: "doradztwo",
-    question: "Czy pomagacie dobrać odpowiedni wzór?",
+    question: "Czy realizujecie własne projekty i wzory klienta?",
     answer:
-      "Tak. Po wysłaniu zapytania doradzimy, jaki wzór i styl będą najlepiej pasować do konkretnego wnętrza — uwzględniając światło, kolorystykę i funkcję pomieszczenia.",
+      "Tak. Wykonujemy panele według Twojego pomysłu lub dostarczonego projektu — to indywidualna, autorska realizacja dopasowana pod wymiar i charakter wnętrza.",
   },
   {
     id: "remont",

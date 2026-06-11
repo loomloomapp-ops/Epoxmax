@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect } from "react";
 import { Close } from "@/components/icons/Close";
@@ -8,7 +9,7 @@ import { Phone } from "@/components/icons/Phone";
 import { Mail } from "@/components/icons/Mail";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
 import { Button } from "@/components/ui/Button";
-import { BRAND, NAV_ITEMS } from "@/content/nav";
+import { NAV_ITEMS } from "@/content/nav";
 import { env } from "@/lib/env";
 
 type Props = {
@@ -46,10 +47,18 @@ export function MobileMenu({ open, onClose }: Props) {
             <Link
               href="/#start"
               onClick={onClose}
-              className="flex items-center gap-2 font-display text-[1.2rem] font-medium tracking-tighter text-ink"
+              aria-label="EPOXMAX — strona główna"
+              className="flex items-center"
             >
-              <span aria-hidden="true" className="block h-2 w-2 rounded-full bg-accent-green" />
-              <span>{BRAND.name}</span>
+              <span className="flex h-9 items-center rounded-xl border border-hairline bg-white px-3 shadow-soft">
+                <Image
+                  src="/images/brand/epoxmax-lockup.png"
+                  alt="EPOXMAX"
+                  width={1356}
+                  height={240}
+                  className="h-5 w-auto"
+                />
+              </span>
             </Link>
             <button
               type="button"

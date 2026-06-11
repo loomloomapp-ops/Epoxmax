@@ -78,9 +78,9 @@ export function Portfolio() {
         <div className="mt-8 grid gap-6 lg:mt-12 lg:grid-cols-12 lg:items-center lg:gap-16">
           <Reveal delay={0.05} className="lg:col-span-7">
             <p className="max-w-[58ch] text-[1.05rem] leading-relaxed text-muted">
-              Zobacz, jak dekoracyjne panele wyglądają w różnych przestrzeniach — od
-              mieszkań po lokale usługowe. Każdy projekt to dobór wzoru pod styl,
-              światło i funkcję pomieszczenia.
+              Wybrane realizacje dekoracyjnych paneli — od sypialni i kuchni po
+              przestrzenie specjalne. Każdy projekt to indywidualne, autorskie
+              wykonanie według pomysłu klienta, w prestiżowym wydaniu premium.
             </p>
           </Reveal>
           <Reveal
@@ -93,7 +93,7 @@ export function Portfolio() {
               size="lg"
               onClick={() => Events.ctaClicked("portfolio-header")}
             >
-              Dobrać panel
+              Zamów wycenę
             </Button>
           </Reveal>
         </div>
@@ -172,10 +172,10 @@ export function Portfolio() {
                   <div className="absolute inset-x-5 bottom-5 flex items-end justify-between gap-4 lg:hidden">
                     <div className="flex min-w-0 flex-col items-start gap-2 leading-tight">
                       <span className="inline-flex w-fit items-center whitespace-nowrap rounded-full border border-white/20 bg-deep/65 px-3 py-1.5 font-mono text-[0.62rem] uppercase tracking-marker text-[#A4D9B7] backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]">
-                        {item.index} · {item.pattern}
+                        {item.index} · {item.tag}
                       </span>
                       <span className="truncate font-display text-[1.15rem] tracking-tighter text-white drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:text-[1.3rem]">
-                        {item.room} · {item.city}
+                        {item.title}
                       </span>
                     </div>
                     <span className="shrink-0 whitespace-nowrap rounded-full border border-white/20 bg-deep/65 px-3 py-1.5 font-mono text-[0.62rem] uppercase tracking-marker text-white backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]">
@@ -188,10 +188,10 @@ export function Portfolio() {
                 <div className="mt-6 hidden items-baseline justify-between gap-6 lg:flex">
                   <div className="flex flex-col leading-tight">
                     <span className="font-mono text-[0.7rem] uppercase tracking-marker text-accent-green">
-                      {item.index} · {item.pattern}
+                      {item.index} · {item.tag}
                     </span>
                     <span className="mt-2 font-display text-[1.3rem] tracking-tighter text-ink sm:text-[1.55rem]">
-                      {item.room} · {item.city}
+                      {item.title}
                     </span>
                   </div>
                   <ProjectLink>Zobacz realizację</ProjectLink>
@@ -201,7 +201,7 @@ export function Portfolio() {
           })}
         </motion.div>
 
-        {/* Mobile-only Dobrać panel CTA — directly under the images */}
+        {/* Mobile-only CTA — directly under the images */}
         <Reveal className="mt-10 lg:hidden">
           <Button
             href="/#kontakt"
@@ -210,7 +210,7 @@ export function Portfolio() {
             fullWidth
             onClick={() => Events.ctaClicked("portfolio-mobile-cta")}
           >
-            Dobrać panel
+            Zamów wycenę
           </Button>
         </Reveal>
 
@@ -219,10 +219,10 @@ export function Portfolio() {
           <div className="mt-14 flex flex-col items-start gap-5 rounded-4xl border border-hairline bg-surface p-7 shadow-soft sm:flex-row sm:items-center sm:justify-between sm:p-10">
             <div className="max-w-xl">
               <p className="font-mono text-[0.72rem] uppercase tracking-marker text-accent-green">
-                Wskazówka
+                Twój projekt
               </p>
               <h3 className="mt-2 font-display text-[1.5rem] leading-snug tracking-tighter text-ink sm:text-[1.85rem]">
-                Chcesz podobny efekt u siebie? Pomożemy dobrać wzór.
+                Masz własny pomysł na wzór? Zrealizujemy go u Ciebie.
               </h3>
             </div>
             <Button
@@ -233,7 +233,7 @@ export function Portfolio() {
                 popup.open("portfolio");
               }}
             >
-              Dobrać panel
+              Zamów wycenę
             </Button>
           </div>
         </Reveal>
@@ -243,7 +243,6 @@ export function Portfolio() {
         items={items}
         activeId={lightboxId}
         onClose={() => setLightboxId(null)}
-        onNavigate={(id) => setLightboxId(id)}
       />
     </section>
   );

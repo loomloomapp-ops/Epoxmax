@@ -15,6 +15,6 @@ export const NAV_ITEMS: NavItem[] = [
 export const BRAND = {
   name: "EPOXMAX",
   tagline:
-    "Panele dekoracyjne z nadrukiem do szybkiej metamorfozy wnętrz w całej Polsce.",
+    "Ekskluzywne panele dekoracyjne na zamówienie — prestiżowa metamorfoza wnętrz w całej Polsce.",
   fullLegal: "EPOXMAX Sp. z o.o.",
 };

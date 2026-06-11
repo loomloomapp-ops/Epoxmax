@@ -33,8 +33,9 @@ export function FormFinal() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 max-w-[55ch] text-[1.05rem] leading-relaxed text-muted">
-                Zostaw kontakt, a pomożemy dobrać panele z odpowiednim wzorem do
-                Twojej przestrzeni. Bez zobowiązań, bez presji sprzedażowej.
+                Zostaw kontakt, a wykonamy panele według Twojego projektu — w
+                prestiżowym, indywidualnym wydaniu. Bez zobowiązań, bez presji
+                sprzedażowej.
               </p>
             </Reveal>
 
@@ -114,7 +115,7 @@ export function FormFinal() {
                 Formularz kontaktowy
               </p>
               <h3 className="mt-2 font-display text-[1.35rem] leading-tight tracking-tighter text-ink sm:text-[1.5rem]">
-                Zostaw kontakt — pomożemy dobrać panele.
+                Zostaw kontakt — wycenimy Twój projekt.
               </h3>
               <div className="mt-5">
                 <LeadForm source="section-07-kontakt" variant="compact" />
